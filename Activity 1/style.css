@@ -1,0 +1,37 @@
+.hero-1{
+    background-image: url('assets/img1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-2{
+    background-image: url('assets/img2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-3{
+    background-image: url('assets/img3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+#Books{
+    padding-left: 150px;
+}
+.btn{
+    text-decoration: none;
+    border: 3px solid;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 200ms ease-in;
+    color:red (92, 92, 205);
+}
+
+.btn:hover{
+    background-color: red (125, 125, 211);
+    color: red;
+    padding: 7px;
+}
