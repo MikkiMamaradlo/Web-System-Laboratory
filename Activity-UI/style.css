@@ -1,0 +1,26 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 900px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+#songList {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#songList .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#songList .btn-danger {
+    cursor: pointer;
+}
