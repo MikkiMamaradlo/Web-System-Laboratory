@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; 
 }
 
 .container {
@@ -23,4 +23,16 @@ h3 {
 
 #songList .btn-danger {
     cursor: pointer;
+}
+
+#songList .list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-top: 10px;
 }
