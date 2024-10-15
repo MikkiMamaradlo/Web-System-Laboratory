@@ -12,7 +12,10 @@ let songs = [
     { title: "Kanit Kailan", artist: "BINI" }
 ];
 
-
+/**
+ * Renders the song list with optional filtering
+ * @param {Array} filteredSongs - Optional filtered song list
+ */
 function renderSongs(filteredSongs = songs) {
     songList.innerHTML = '';
 
@@ -30,13 +33,12 @@ function renderSongs(filteredSongs = songs) {
     });
 }
 
-
-addBtn.addEventListener('click', () => {
+addBtn.addEventListener('click', (e) => {
+    e.preventDefault(); 
     const title = songTitleInput.value.trim();
     const artist = artistInput.value.trim();
 
     if (title && artist) {
-
         songs.push({ title, artist });
         songTitleInput.value = '';
         artistInput.value = '';
@@ -46,7 +48,10 @@ addBtn.addEventListener('click', () => {
     }
 });
 
-
+/**
+ * Handles delete song functionality
+ * @param {Number} index - Index of the song to be deleted
+ */
 function deleteSong(index) {
     songs.splice(index, 1);
     renderSongs();
@@ -60,5 +65,6 @@ searchInput.addEventListener('input', () => {
     );
     renderSongs(filteredSongs); 
 });
+
 
 renderSongs();
