@@ -6,10 +6,9 @@ const searchInput = document.getElementById('searchInput');
 
 
 let songs = [
-    { title: "Synesthesia", artist: "BINI" },
-    { title: "Your Song", artist: "BINI" },
-    { title: "Heaven Knows", artist: "BINI" },
-    { title: "Kanit Kailan", artist: "BINI" }
+    { title: "Synesthesia", artist: "Mayonnaise" },
+    { title: "Your Song", artist: "Parokya Ni Edgar" },
+    { title: "Heaven Knows", artist: "Orange & Lemons" }
 ];
 
 /**
